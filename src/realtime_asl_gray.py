@@ -43,7 +43,7 @@ else:
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("Failed to grab frame from webcam.")
+        print("bruh again, Failed to grab frame from webcam.")
         break
 
     frame = cv2.flip(frame, 1)
