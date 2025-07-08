@@ -7,8 +7,7 @@ __pycache__/
 *.so
 
 # Ignore model files if not sharing weights
-models/*.h5
-models/*.keras
+
 
 # Ignore logs and generated plots
 *.log
