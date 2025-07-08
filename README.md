@@ -22,7 +22,7 @@ source venv/bin/activate  # On macOS/Linux
 ### Install Dependencies
 pip install -r requirements.txt
 
-### 1. Train the Model
+### 1. Train the Model (Optional)
 python asl_detection.py
 
 ### 2. Real-time Detection
