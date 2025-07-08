@@ -14,7 +14,7 @@ A deep learning-based project for detecting American Sign Language (ASL) hand si
 git clone https://github.com/your-username/asl_hand_sign_detection.git
 cd asl_hand_sign_detection
 
-### Set up a virtual environment
+### Set up a virtual environment (Need to have python installed)
 python -m venv venv
 venv\Scripts\activate  # On Windows
 source venv/bin/activate  # On macOS/Linux
@@ -23,11 +23,11 @@ source venv/bin/activate  # On macOS/Linux
 pip install -r requirements.txt
 
 ### 1. Train the Model (Optional)
-python asl_detection.py
+python asl_detection_gray.py
 
 ### 2. Real-time Detection
 cd src
-python realtime_asl.py
+python realtime_asl_gray.py
 ```
 
 Make sure your webcam is on and your hand is clearly visible in the red box.
