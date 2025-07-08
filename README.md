@@ -14,7 +14,7 @@ A deep learning-based project for detecting American Sign Language (ASL) hand si
 git clone https://github.com/Falco0906/asl_hand_sign_detection.git
 cd asl_hand_sign_detection
 
-### Set up a virtual environment (Need to have python installed)
+### Set up a virtual environment (Need to have python 3.10 installed)
 python -m venv venv
 venv\Scripts\activate  # On Windows
 source venv/bin/activate  # On macOS/Linux
