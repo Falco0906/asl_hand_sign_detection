@@ -23,7 +23,18 @@ class_names = sorted(os.listdir(TRAIN_DIR))
 
 # Start webcam
 #cap = cv2.VideoCapture(0)
-cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)  # use index 1 and AVFoundation on macOS
+#cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)  # use index 1 and AVFoundation on macOS
+# Try camera indices 0 to 3
+cap = None
+for i in range(3):
+    test_cap = cv2.VideoCapture(i)
+    if test_cap.isOpened():
+        cap = test_cap
+        print(f"✅ Using camera index {i}")
+        break
+
+if cap is None:
+    raise RuntimeError("❌ No working webcam found.")
 
 
 while True:
