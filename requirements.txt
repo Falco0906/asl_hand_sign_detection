@@ -1,7 +1,6 @@
-tensorflow==2.16.2          # Stable version, works on CPU, compatible with macOS/Linux/Windows
-opencv-python==4.12.0.88    # For webcam input
-numpy==1.24.3               # Compatible with TensorFlow 2.16.2
-matplotlib==3.8.4           # For plotting training curves
-seaborn==0.13.2             # For confusion matrix heatmaps
-scikit-learn==1.5.0         # For classification report and metrics
-
+numpy==1.24.3
+tensorflow==2.16.2
+opencv-python
+matplotlib
+scikit-learn
+seaborn
