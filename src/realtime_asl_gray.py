@@ -22,7 +22,9 @@ IMG_SIZE = (64, 64)
 class_names = sorted(os.listdir(TRAIN_DIR))
 
 # Start webcam
-cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1, cv2.CAP_AVFOUNDATION)  # use index 1 and AVFoundation on macOS
+
 
 while True:
     ret, frame = cap.read()
